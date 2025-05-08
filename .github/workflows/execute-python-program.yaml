@@ -1,0 +1,22 @@
+name: Execute Python Program
+
+on:
+  schedule:
+    - cron: '00 10 * * 1-5'     # At 4:03 AM UTC, every day
+
+
+jobs:
+  execute-cron-program:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v5.5.0
+
+      - name: Install dependencies
+        run: pip install requests pytz
+
+      - name: Execute program
+        run: python main.py

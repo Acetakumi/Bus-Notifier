@@ -1,0 +1,20 @@
+{
+    "schedule": {
+        "Monday": "09:00",
+        "Tuesday": "09:00",
+        "Wednesday": "08:45",
+        "Thursday": "08:45",
+        "Friday": "08:45",
+        "Saturday": null,
+        "Sunday": null
+    },
+
+    "coordinates" : {
+        
+        "from": "45.52923881230942, -73.6351910423282",
+        "to": "45.494881,-73.577500"
+    }
+}
+
+
+
